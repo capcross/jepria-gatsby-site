@@ -14,10 +14,18 @@ const Menu = () => (
         display: 'flex',
         justifyContent: 'space-evenly',
     }}>
-      <li><Link to="/">JepRia</Link></li>
-      {/* <li><Link to="/news">Новости</Link></li> */}
-      <li><Link to="/services">Сервисы</Link></li>
-      <li><Link to="/about">О нас</Link></li>
+      <li>
+        <Link to="/">JepRia</Link>
+      </li>
+      <li>
+        <Link to="/about">О нас</Link>
+      </li>
+      <li>
+        <Link to="/services">Сервисы</Link>
+      </li>
+      <li>
+        <Link to="/blog">Новости</Link>
+      </li>
     </ul>
   </div>
 )
