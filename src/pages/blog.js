@@ -8,7 +8,7 @@ const BlogPage = ({ data }) => (
       <div key={post.node.id}>
         <h3>{post.node.frontmatter.title}</h3>
         <small>
-          Posted by {post.node.frontmatter.author} on{' '}
+        Автор: {post.node.frontmatter.author} on{' '}
           {post.node.frontmatter.date}
         </small>
         <br />
