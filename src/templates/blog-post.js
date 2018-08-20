@@ -6,7 +6,7 @@ export default function Template({ data }) {
 
   return (
     <div>
-      <Link to="/blog">Go Back</Link>
+      <Link to="/blog">Назад</Link>
       <hr />
       <h1>{post.frontmatter.title}</h1>
       <h4>
