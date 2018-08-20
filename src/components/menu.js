@@ -18,13 +18,13 @@ const Menu = () => (
         <Link to="/">JepRia</Link>
       </li>
       <li>
-        <Link to="/about">О нас</Link>
-      </li>
-      <li>
-        <Link to="/services">Сервисы</Link>
-      </li>
-      <li>
         <Link to="/blog">Новости</Link>
+      </li>
+      {/* <li>
+        <Link to="/services">Сервисы</Link>
+      </li> */}
+      <li>
+        <Link to="/about">О нас</Link>
       </li>
     </ul>
   </div>
