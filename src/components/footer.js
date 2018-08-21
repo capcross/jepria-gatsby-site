@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Footer = ({ siteTitle }) => (
+const Footer = () => (
   <div
     style={{
       background: '#006363',
