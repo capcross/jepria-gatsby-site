@@ -13,7 +13,7 @@ const BlogPage = ({ data }) => (
         </small>
         <br />
         <br />
-        <Link to={post.node.frontmatter.path}>Смотреть...</Link>
+        <Link to={post.node.frontmatter.path}>[...]</Link>
         <br />
         <br />
         <hr />
