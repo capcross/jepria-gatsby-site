@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 
 let items = null;
 
@@ -23,19 +24,31 @@ fetch(
 				}
 			})
 			.then((response) => {
-			console.log("RESPONSE: " + JSON.stringify(response))
-			response.json().then(function(data) {
-				items = JSON.stringify(data);
-			});
+        console.log("RESPONSE: " + JSON.stringify(response))
+        response.json().then(function(data) {
+          items = data;
+        });
 			});
 	});
 
-const AppsPage = () => (
-  <div>
-    <h2>Приложения</h2>
-    <p>В работе...</p>
-    <div>{items}</div>
-  </div>
-)
+const AppsPage = () => {
+  return (
+    <div>
+      <h2>JR Feature</h2>
+      <div>
+        {
+            items && items.map(task => {
+              const name = task.name;
+              return (
+                <Link key={task.id} to={`/product/${task.id}`}>
+                  <div>{name}</div>
+                </Link>
+              )
+            })
+          }      
+      </div>
+    </div>
+  )
+}
 
 export default AppsPage
