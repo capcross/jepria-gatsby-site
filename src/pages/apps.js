@@ -32,7 +32,7 @@ fetch(
 
 const AppsPage = () => (
   <div>
-    <h1>Приложения</h1>
+    <h2>Приложения</h2>
     <p>В работе...</p>
     <div>{items}</div>
   </div>
