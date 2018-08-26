@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 let items = null;
 
-fetch(
+window.fetch(
   "http://jepria.org/feature-json-jepria-backend/LoginServlet?username=alapygin@yandex.ru&password=jepria2017",
   {
     method: 'GET',
@@ -11,7 +11,7 @@ fetch(
   })
   .then((auth) => {
     console.log("RESPONSE: " + auth);
-    fetch(
+    window.fetch(
       "http://jepria.org/feature-json-jepria-backend/v1/features",
       {
         method: 'GET',
