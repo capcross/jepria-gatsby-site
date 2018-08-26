@@ -3,7 +3,9 @@ import Link from 'gatsby-link'
 
 let items = null;
 
-window.fetch(
+const fetch = require('isomorphic-fetch');
+
+fetch(
   "http://jepria.org/feature-json-jepria-backend/LoginServlet?username=alapygin@yandex.ru&password=jepria2017",
   {
     method: 'GET',
@@ -11,7 +13,7 @@ window.fetch(
   })
   .then((auth) => {
     console.log("RESPONSE: " + auth);
-    window.fetch(
+    fetch(
       "http://jepria.org/feature-json-jepria-backend/v1/features",
       {
         method: 'GET',
