@@ -20,9 +20,9 @@ const Menu = () => (
       <li>
         <Link to="/blog">Новости</Link>
       </li>
-      {/* <li>
+      <li>
         <Link to="/apps">Приложения</Link>
-      </li> */}
+      </li>
       <li>
         <Link to="/about">О нас</Link>
       </li>
