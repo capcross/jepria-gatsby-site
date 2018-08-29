@@ -21,10 +21,10 @@ const Menu = () => (
         <Link to="/blog">Новости</Link>
       </li>
       <li>
-        <Link to="/apps">Приложения - fetch</Link>
+        <Link to="/apps">Гибридные приложения - <i>Fetch from Feature</i></Link>
       </li>
       <li>
-        <Link to="/feature">Приложения - Feature</Link>
+        <Link to="/feature">Гибридные приложения - <i>Feature</i></Link>
       </li>
       <li>
         <Link to="/about">О нас</Link>
