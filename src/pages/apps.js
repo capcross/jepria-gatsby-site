@@ -37,7 +37,7 @@ const AppsPage = () => {
   return (
     <div>
       <h1>Приложения</h1>
-      <h2>JR Feature</h2>
+      <h2>Fetch from Feature</h2>
       <div>
         {
           items && items.map(task => {
