@@ -36,8 +36,8 @@ fetch(
 const AppsPage = () => {
   return (
     <div>
-      <h1>Приложения</h1>
-      <h2>Fetch from Feature</h2>
+      <h1>Гибридные приложения</h1>
+      <h2><i>Fetch from Feature</i></h2>
       <div>
         {
           items && items.map(task => {
