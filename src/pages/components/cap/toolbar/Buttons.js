@@ -73,9 +73,12 @@ const ListButton = (props) => {
   const isDisabled = !(workstate === Workstate.ADD ||
                        workstate === Workstate.EDIT ||
                        workstate === Workstate.VIEW_DETAILS);
+  const className = isDisabled ? "disabled" : "enabled"
 
   return (
-      <ToolbarButton disabled={isDisabled} onClick={props.onClick}>Список</ToolbarButton>
+      <ToolbarButton disabled={isDisabled} onClick={props.onClick}>
+        <img src="./toolbar/list.png" alt="Список" className={className}/>
+      </ToolbarButton>
   );
 };
 
@@ -94,9 +97,13 @@ const SearchButton = (props) => {
 const FindButton = (props) => {
   const workstate = props.workstate;
   const isDisabled = (workstate) => !(workstate === Workstate.SEARCH);
+  const className = isDisabled(workstate) ? "disabled" : "enabled"
 
   return (
-      <ToolbarButton disabled={isDisabled(workstate)} onClick={props.onClick}>Найти</ToolbarButton>
+      // <ToolbarButton disabled={isDisabled(workstate)} onClick={props.onClick}>Найти</ToolbarButton>
+      <ToolbarButton disabled={isDisabled(workstate)} onClick={props.onClick}>
+      <img src="./toolbar/search.png" alt="Найти" className={className}/>
+    </ToolbarButton>
   );
 };
 
