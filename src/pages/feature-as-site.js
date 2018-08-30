@@ -2,16 +2,16 @@ import React from 'react'
 import './css/JepRia.css';
 import App from './App';
 
-const FeaturePage = () => {
+const FeatureAsSitePage = () => {
   return (
     <div>
       <h1>Гибридные приложения</h1>
-      <h2><i>Приложение как компонент</i></h2>
+      <h2><i>Приложение как сайт</i></h2>
       <div>
-        <App />
+      <h3>Не успел ;)</h3>
       </div>
     </div>
   )
 }
 
-export default FeaturePage
+export default FeatureAsSitePage

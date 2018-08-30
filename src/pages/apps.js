@@ -37,7 +37,7 @@ const AppsPage = () => {
   return (
     <div>
       <h1>Гибридные приложения</h1>
-      <h2><i>Fetch from Feature</i></h2>
+      <h2><i>Приложение как страница</i></h2>
       <div>
         {
           items && items.map(task => {
