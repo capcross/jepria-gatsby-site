@@ -43,9 +43,10 @@ const AppsPage = () => {
           items && items.map(task => {
             const name = task.name;
             return (
-              <Link key={task.id} to={`/task/${task.id}`}>
-                <div>{name}</div>
-              </Link>
+              // <Link key={task.id} to={`/task/${task.id}`}>
+              //   <div>{name}</div>
+              // </Link>
+              <div>{name}</div>
             )
           })
         }
