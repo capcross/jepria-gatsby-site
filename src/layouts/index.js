@@ -28,7 +28,12 @@ Button.defaultProps = {
 
 // Define what props.theme will look like
 const theme = {
-  main: "green"
+  main: "green",
+  headerColor: "red",
+  headerTextColor: "black",
+  menuColor: "black",
+  menuTextColor: "red",
+  contentColor: "blue",
 };
 
 const Layout = ({ children, data }) => (
@@ -42,7 +47,10 @@ const Layout = ({ children, data }) => (
             { name: 'keywords', content: 'jepria, library, react' },
           ]}
         />
-        <Header siteTitle={data.site.siteMetadata.title} />
+        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+        <Header>
+          {data.site.siteMetadata.title}
+        </Header>
         <Menu />
         <div
           style={{
