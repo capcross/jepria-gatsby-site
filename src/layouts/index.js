@@ -29,9 +29,9 @@ Button.defaultProps = {
 // Define what props.theme will look like
 const theme = {
   main: "green",
-  headerColor: "red",
-  headerTextColor: "black",
-  menuColor: "black",
+  headerColor: "#bf0028",
+  headerTextColor: "#fff",
+  menuColor: "#474747",
   menuTextColor: "white",
   contentColor: "blue",
 };
@@ -61,12 +61,9 @@ const Layout = ({ children, data }) => (
           }}
         >
           {children()}
-          <Button>В теме на большей глубине вложенности</Button>
         </div>
-        <Button>В теме</Button>
       </div>
     </ThemeProvider>
-    <Button>Вне темы</Button>
   </div>
 )
 

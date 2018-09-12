@@ -3,19 +3,19 @@ import Link from 'gatsby-link';
 import styled from 'styled-components';
 
 const MenuStyled = styled.div`
-  background: black;
-  paddingTop: 10px;
+  background: ${props => props.theme.menuColor};
+  padding-top: 10px;
 `;
 
 const MenuListStyled = styled.ul`
-  listStyle: none;
+  list-style: none;
   display: flex;
-  justifyContent: space-evenly;
+  justify-content: space-evenly;
 `;
 
-const StyledLink = styled(Link)`
+const MeunStyledLink = styled(Link)`
   color: ${props => props.theme.menuTextColor};
-  textDecoration: none;
+  text-decoration: none;
 `;
 
 
@@ -23,22 +23,22 @@ const Menu = () => (
   <MenuStyled>
     <MenuListStyled>
       <li>
-        <StyledLink to="/">JepRia</StyledLink>
+        <MeunStyledLink to="/">JepRia</MeunStyledLink>
       </li>
       <li>
-        <StyledLink to="/blog">Новости</StyledLink>
+        <MeunStyledLink to="/blog">Новости</MeunStyledLink>
       </li>
       <li>
-        <StyledLink to="/apps"><i>Feature</i> как страница</StyledLink>
+        <MeunStyledLink to="/apps"><i>Feature</i> как страница</MeunStyledLink>
       </li>
       <li>
-        <StyledLink to="/feature"><i>Feature</i> как компонент</StyledLink>
+        <MeunStyledLink to="/feature"><i>Feature</i> как компонент</MeunStyledLink>
       </li>
       <li>
-        <StyledLink to="/feature-as-site"><i>Feature</i> как сайт</StyledLink>
+        <MeunStyledLink to="/feature-as-site"><i>Feature</i> как сайт</MeunStyledLink>
       </li>
       <li>
-        <StyledLink to="/about">О нас</StyledLink>
+        <MeunStyledLink to="/about">О нас</MeunStyledLink>
       </li>
     </MenuListStyled>    
   </MenuStyled>)
