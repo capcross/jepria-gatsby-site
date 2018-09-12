@@ -21,7 +21,7 @@ const Button = styled.button`
 // We are passing a default theme for Buttons that arent wrapped in the ThemeProvider
 Button.defaultProps = {
   theme: {
-    main: "red"
+    main: "black"
   }
 }
 
@@ -41,36 +41,40 @@ const jrTheme = {
   menuTextColor: "black",
 };
 
-const Layout = ({ children, data }) => (
-  <div>
-    <ThemeProvider theme={jrTheme}>
-      <div>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'JepRia new site' },
-            { name: 'keywords', content: 'jepria, library, react' },
-          ]}
-        />
-        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-        <Header>
-          {data.site.siteMetadata.title}
-        </Header>
-        <Menu />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-          }}
-        >
-          {children()}
+let theme = {};
+
+const Layout = ({ children, data }) => {
+  return (
+    <div>
+      <ThemeProvider theme={jrTheme}>
+        <div>
+          <Helmet
+            title={data.site.siteMetadata.title}
+            meta={[
+              { name: 'description', content: 'JepRia new site' },
+              { name: 'keywords', content: 'jepria, library, react' },
+            ]}
+          />
+          {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+          <Header>
+            {data.site.siteMetadata.title}
+          </Header>
+          <Menu />
+          <div
+            style={{
+              margin: '0 auto',
+              maxWidth: 960,
+              padding: '0px 1.0875rem 1.45rem',
+              paddingTop: 0,
+            }}
+          >
+            {children()}
+          </div>
         </div>
-      </div>
-    </ThemeProvider>
-  </div>
-)
+      </ThemeProvider>
+    </div>
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.func,
