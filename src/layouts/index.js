@@ -44,6 +44,12 @@ const jrTheme = {
 let theme = {};
 
 const Layout = ({ children, data }) => {
+
+  let skinButton = null;
+  if (theme === jrTheme) {
+    skinButton = <Button>Кнопка скина</Button>;
+  }
+
   return (
     <div>
       <ThemeProvider theme={jrTheme}>
@@ -70,6 +76,7 @@ const Layout = ({ children, data }) => {
           >
             {children()}
           </div>
+          {skinButton}
         </div>
       </ThemeProvider>
     </div>
