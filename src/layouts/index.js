@@ -41,9 +41,17 @@ const jrTheme = {
   menuTextColor: "black",
 };
 
-let theme = {};
+let theme = jrTheme;
+
+const toggleTheme = () => {
+  if(JSON.stringify(document.location).indexOf("/themes") >= 0)
+    return theme === rfTheme ? jrTheme : rfTheme;
+  else
+    return theme;
+}
 
 const Layout = ({ children, data }) => {
+  theme = toggleTheme();
 
   let skinButton = null;
   if (theme === jrTheme) {
@@ -52,7 +60,7 @@ const Layout = ({ children, data }) => {
 
   return (
     <div>
-      <ThemeProvider theme={jrTheme}>
+      <ThemeProvider theme={theme}>
         <div>
           <Helmet
             title={data.site.siteMetadata.title}
