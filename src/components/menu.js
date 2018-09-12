@@ -13,7 +13,7 @@ const MenuListStyled = styled.ul`
   justify-content: space-evenly;
 `;
 
-const MeunStyledLink = styled(Link)`
+const MenuStyledLink = styled(Link)`
   color: ${props => props.theme.menuTextColor};
   text-decoration: none;
 `;
@@ -22,22 +22,25 @@ const Menu = () => (
   <MenuStyled>
     <MenuListStyled>
       <li>
-        <MeunStyledLink to="/">JepRia</MeunStyledLink>
+        <MenuStyledLink to="/">JepRia</MenuStyledLink>
       </li>
       <li>
-        <MeunStyledLink to="/blog">Новости</MeunStyledLink>
+        <MenuStyledLink to="/blog">Новости</MenuStyledLink>
       </li>
       <li>
-        <MeunStyledLink to="/apps"><i>Feature</i> как страница</MeunStyledLink>
+        <MenuStyledLink to="/apps"><i>Feature</i> как страница</MenuStyledLink>
       </li>
       <li>
-        <MeunStyledLink to="/feature"><i>Feature</i> как компонент</MeunStyledLink>
+        <MenuStyledLink to="/feature"><i>Feature</i> как компонент</MenuStyledLink>
       </li>
       <li>
-        <MeunStyledLink to="/feature-as-site"><i>Feature</i> как сайт</MeunStyledLink>
+        <MenuStyledLink to="/feature-as-site"><i>Feature</i> как сайт</MenuStyledLink>
       </li>
       <li>
-        <MeunStyledLink to="/about">О нас</MeunStyledLink>
+        <MenuStyledLink to="/about">О нас</MenuStyledLink>
+      </li>
+      <li>
+        <MenuStyledLink to="/themes">Темы</MenuStyledLink>
       </li>
     </MenuListStyled>    
   </MenuStyled>)
