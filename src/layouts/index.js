@@ -32,7 +32,7 @@ const theme = {
   headerColor: "red",
   headerTextColor: "black",
   menuColor: "black",
-  menuTextColor: "red",
+  menuTextColor: "white",
   contentColor: "blue",
 };
 

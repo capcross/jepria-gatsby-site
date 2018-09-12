@@ -15,7 +15,7 @@ const SubHeaderStyled = styled.div`
 
 const StyledLink = styled(Link)`
   color: ${props => props.theme.headerTextColor};
-  textDecoration: 'none';
+  textDecoration: none;
 `;
 
 const Header = (props) => (

@@ -1,39 +1,46 @@
 import React from 'react'
 import Link from 'gatsby-link';
+import styled from 'styled-components';
+
+const MenuStyled = styled.div`
+  background: black;
+  paddingTop: 10px;
+`;
+
+const MenuListStyled = styled.ul`
+  listStyle: none;
+  display: flex;
+  justifyContent: space-evenly;
+`;
+
+const StyledLink = styled(Link)`
+  color: ${props => props.theme.menuTextColor};
+  textDecoration: none;
+`;
+
 
 const Menu = () => (
-  <div
-    style={{
-      background: '#CBF7F7',
-      paddingTop: '10px',
-    }}>
-
-    <ul 
-      style={{
-        listStyle: 'none',
-        display: 'flex',
-        justifyContent: 'space-evenly',
-    }}>
+  <MenuStyled>
+    <MenuListStyled>
       <li>
-        <Link to="/">JepRia</Link>
+        <StyledLink to="/">JepRia</StyledLink>
       </li>
       <li>
-        <Link to="/blog">Новости</Link>
+        <StyledLink to="/blog">Новости</StyledLink>
       </li>
       <li>
-        <Link to="/apps"><i>Feature</i> как страница</Link>
+        <StyledLink to="/apps"><i>Feature</i> как страница</StyledLink>
       </li>
       <li>
-        <Link to="/feature"><i>Feature</i> как компонент</Link>
+        <StyledLink to="/feature"><i>Feature</i> как компонент</StyledLink>
       </li>
       <li>
-        <Link to="/feature-as-site"><i>Feature</i> как сайт</Link>
+        <StyledLink to="/feature-as-site"><i>Feature</i> как сайт</StyledLink>
       </li>
       <li>
-        <Link to="/about">О нас</Link>
+        <StyledLink to="/about">О нас</StyledLink>
       </li>
-    </ul>
-  </div>
-)
+    </MenuListStyled>    
+  </MenuStyled>)
 
 export default Menu

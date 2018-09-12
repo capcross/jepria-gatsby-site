@@ -2,7 +2,8 @@
 .cache
 node_modules
 yarn-error.log
+/public/render-page.js.map
 
 # Build directory
-/public
+
 .DS_Store
