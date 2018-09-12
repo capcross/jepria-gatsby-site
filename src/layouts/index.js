@@ -32,15 +32,13 @@ const rfTheme = {
   headerTextColor: "#fff",
   menuColor: "#474747",
   menuTextColor: "white",
-  contentColor: "blue",
 };
 
 const jrTheme = {
   headerColor: "#006363",
   headerTextColor: "#94ECEC",
-  menuColor: "#474747",
-  menuTextColor: "white",
-  contentColor: "blue",
+  menuColor: "#CBF7F7",
+  menuTextColor: "black",
 };
 
 const Layout = ({ children, data }) => (
