@@ -36,8 +36,8 @@ const rfTheme = {
 };
 
 const jrTheme = {
-  headerColor: "#bf0028",
-  headerTextColor: "#fff",
+  headerColor: "#006363",
+  headerTextColor: "#94ECEC",
   menuColor: "#474747",
   menuTextColor: "white",
   contentColor: "blue",
