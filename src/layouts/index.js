@@ -69,7 +69,6 @@ const Layout = ({ children, data }) => {
               { name: 'keywords', content: 'jepria, library, react' },
             ]}
           />
-          {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
           <Header>
             {data.site.siteMetadata.title}
           </Header>
