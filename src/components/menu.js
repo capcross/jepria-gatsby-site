@@ -18,7 +18,6 @@ const MeunStyledLink = styled(Link)`
   text-decoration: none;
 `;
 
-
 const Menu = () => (
   <MenuStyled>
     <MenuListStyled>

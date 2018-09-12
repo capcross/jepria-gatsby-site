@@ -27,8 +27,15 @@ Button.defaultProps = {
 
 
 // Define what props.theme will look like
-const theme = {
-  main: "green",
+const rfTheme = {
+  headerColor: "#bf0028",
+  headerTextColor: "#fff",
+  menuColor: "#474747",
+  menuTextColor: "white",
+  contentColor: "blue",
+};
+
+const jrTheme = {
   headerColor: "#bf0028",
   headerTextColor: "#fff",
   menuColor: "#474747",
@@ -38,7 +45,7 @@ const theme = {
 
 const Layout = ({ children, data }) => (
   <div>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={jrTheme}>
       <div>
         <Helmet
           title={data.site.siteMetadata.title}
