@@ -53,10 +53,9 @@ const toggleTheme = () => {
 const Layout = ({ children, data }) => {
   theme = toggleTheme();
 
-  let skinButton = null;
-  if (theme === jrTheme) {
-    skinButton = <Button>Кнопка скина</Button>;
-  }
+  const skinButton = theme === jrTheme ?
+    <Button>Кнопка "малахитового" скина</Button> :
+    <Button>Кнопка "корпоративного" скина</Button>;
 
   return (
     <div>
