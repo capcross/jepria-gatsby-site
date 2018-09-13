@@ -18,14 +18,6 @@ const Button = styled.button`
   border: 2px solid ${props => props.theme.main};
 `;
 
-// We are passing a default theme for Buttons that arent wrapped in the ThemeProvider
-Button.defaultProps = {
-  theme: {
-    main: "black"
-  }
-}
-
-
 // Define what props.theme will look like
 const rfTheme = {
   headerColor: "#bf0028",
